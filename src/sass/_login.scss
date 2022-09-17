@@ -1,0 +1,279 @@
+#login {
+    height:100vh;
+    display: flex;
+    margin-top: -40px;
+    padding-bottom: 80px;
+    align-items: center;
+    justify-content:center;
+    padding-left: 90px;
+    margin-left: -50px;
+    margin-right: -50px;
+   
+
+    @include table {
+        height: 85vh;
+        margin-top: 40px;
+        justify-content:center;
+        padding-left: 0;
+        
+    }
+
+    @include mobile {
+        height: 85vh;
+        margin:0px;
+        width: 410px;
+        justify-content:center;
+    }
+
+    .form-group {
+        #checkbox {
+            display: inline-block;
+            padding: 7px;
+            margin-right: 10px;
+            width: 10px;
+            border-radius:0;
+            border: 1px solid #FFCE00;
+
+        }
+
+        #checkbox:hover{
+            cursor: pointer;
+        }
+
+        input:checked {
+            border: none;
+            outline: 3px solid deeppink;
+
+        }
+
+        span {
+            color: #666;
+        }
+
+        #label-checkbox{
+            display: inline-block;
+           
+        }
+    }
+
+    input, button {
+        background: none;
+        border: none;
+        outline: none;
+        appearance: none;
+    } 
+
+    form {
+        display: block;
+        position: relative;
+        height: 650px;
+        margin-top: calc(#{$header-height} + 40px);
+        box-shadow: $box-shadow;
+
+        @include table {
+            margin-top: 10px;
+        }
+
+        @include mobile {
+            margin-top: 40px;
+            height: 500px;
+        }
+        
+    }
+
+
+    form:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: -5px;
+        left:-5px;
+        right: -5px;
+        bottom: -5px;
+        z-index: 1;
+        background-image: linear-gradient(to bottom right, #FFCE00, #FE4880);
+    }
+
+    form .form-inner {
+        position: relative;
+        display: block;
+        height: 100%;
+        width: 650px;
+        background-color: #FFFFFF;
+        padding:30px;
+        z-index: 2;
+
+        .error {
+            font-size:2rem;
+            color:rgb(255, 81, 0);
+        }
+
+        @include mobile {
+            width: 100%;
+            
+        }
+    }
+    
+    form .form-inner h2 {
+        color:#FFCE00;
+        font-size: 2.5rem;
+        font-weight:600;
+        margin-bottom:30px;
+
+        @include mobile {
+            font-size: 1.5rem;
+            text-align:center;
+            margin-bottom: 15px;
+        }
+    }
+
+    form .form-inner .form-group {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+
+        @include mobile {
+            margin-bottom: 5px;
+        }
+    }
+
+    .form-inner .form-group label {
+        display: block;
+        color: #666;
+        font-size:12px;
+        margin-bottom:5px;
+        transition: 0.4s;
+    }
+
+    .form-inner .form-group:focus-within label {
+        color: #FE4880;
+    }
+
+    .form-inner .form-group input {
+        display: block;
+        width:100%;
+        padding: 10px 15px;
+        background-color: #F8F8F8;
+        border-radius: 8px;
+        transition: 0.4s;
+    }
+
+    .form-inner .form-group input:focus {
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    form .form-inner input[type="submit"],
+    .welcome button {
+        display: inline-block;
+        padding:7px 15px;
+        border-radius: 8px;
+        background-image: linear-gradient(to right, #FFCE00 50%, #FFCE00 50%, #FE4880);
+        color: white;
+        width: 100%;
+        font-weight:600;
+        background-size: 200%;
+        background-position: 0%;
+        transition: 0.4s;
+        font-size: 1.5rem;
+        margin-top: 15px;
+    
+    }
+
+    form .form-inner input[type="submit"]:hover,
+    .welcome button:hover {
+        background-position: 100% 0%;
+        cursor: pointer;
+    }
+
+    .welcome {
+        width: 100%;
+        max-width: 680px;
+        background-color:#fff;
+        padding:15px 30px;
+
+        img {
+            display: block;
+            margin: 30px auto;
+        }
+    }
+    .welcome h1 {
+        color: #888;
+        font-size: 2.5rem;
+        font-weight:500;
+        margin-bottom:30px;
+        text-align: center;
+    }
+
+    .welcome h2 {
+        color: #888;
+        font-size: 3.5rem;
+        font-weight:500;
+        margin-bottom:30px;
+        text-align: center;
+
+        @include mobile {
+            font-size: 1.5rem;
+        }
+    }
+
+    .welcome h2 span {
+        color: #FE4880;
+        font-weight: 600;
+    }
+
+    .forgot-password {
+        text-align: center;
+        margin-top:20px;
+        font-size: 1.2rem;
+        color: #FE4880;
+    }
+
+    .forgot-password:hover { 
+
+        a {
+            color:#FFCE00;
+        }
+
+    }
+
+    .form-group__register {
+        font-size: 1.2rem;
+        text-align: center;
+
+        a{
+            color: #FE4880;
+        }
+
+        a:hover {
+            color:#FFCE00;
+        }
+    }
+
+    .cookies {
+        display: block;
+        position: absolute;
+        bottom: 15px;  
+        font-size:1.2rem;
+        width: 100%;
+    
+
+        @include table {
+            bottom: 5px;
+        }
+
+        @include mobile {
+            bottom: 5px;
+            font-size:1rem;
+            margin-left: -15px;
+        }
+
+        a:hover {
+            color:#FFCE00;
+        }
+    }
+    .error-pw{
+        color:red;
+        font-weight: 500;
+        font-size:1.2rem;
+    }
+}
