@@ -22,7 +22,7 @@
     @include mobile {
         height: inherit;
         margin:0px;
-        width: 410px;
+        width: 100%;
         justify-content:center;
        
     }
@@ -93,6 +93,7 @@
         @include mobile {
             width: 100%;
             height: auto;
+            padding: 30px 20px;
             
         }
     }

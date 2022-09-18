@@ -104,7 +104,7 @@ const Register = () => {
     }
 
   return (
-    <div ClassName="login" id="login" style={{ backgroundImage: `url(${background})` }}>    
+    <div ClassName="register" id="register" style={{ backgroundImage: `url(${background})` }}>    
    
     
         <form onSubmit={handleSubmit} >

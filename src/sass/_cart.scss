@@ -62,6 +62,8 @@
 
             img {
                 height: 160px;
+                object-fit: cover;
+                min-width: 120px;
             }
         }
 

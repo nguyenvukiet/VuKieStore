@@ -79,7 +79,8 @@ const LoginForm = ({Login, error}) => {
             </Link></p>
         </div>
         <div className="cookies">
-                <Grid
+          <div className="cookies__links">
+            <Grid
                         col= {3}
                         mdCol = {3}
                         smCol = {3}
@@ -94,8 +95,9 @@ const LoginForm = ({Login, error}) => {
                     <div>
                     <a href="/">Cookies Settings</a>
                     </div>
-                </Grid>
-            </div>
+              </Grid>
+          </div>
+        </div>
       </div>
    
 
